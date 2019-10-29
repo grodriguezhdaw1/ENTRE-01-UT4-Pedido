@@ -28,12 +28,13 @@ public class Producto
     public double getPrecio() {
         return precio;
     }
-    
+
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public         obtenerCopia() {
-         
+    public   void      obtenerCopia() {
+        new Producto(this.nombre, this.precio);
+
     }
 
     /**
@@ -41,7 +42,7 @@ public class Producto
      * (ver enunciado)
      */
     public String toString() {
-        
+
     }
 
 }

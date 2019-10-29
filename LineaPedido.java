@@ -17,11 +17,18 @@ public class LineaPedido
     public LineaPedido()    {
          
     }
+    
+    public LineaPedido(int cantidad)    {
+         
+    }
+
 
      /**
      * accesor para el producto
      */
-    public     getProducto() {
+    public String  getProducto() {
+        
+        return getProducto();
          
     }
 
@@ -35,7 +42,9 @@ public class LineaPedido
     /**
      * obtiene una nueva línea de pedido copia idéntica de la actual
      */
-    public    obtenerCopia() {
+    public void   obtenerCopia() {
+        
+        new LineaPedido
          
     }
      /**

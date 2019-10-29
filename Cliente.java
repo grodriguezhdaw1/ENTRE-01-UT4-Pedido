@@ -52,8 +52,11 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
-         
-          
+         return 
+          System.out.print("NOMBRE: " + getNombre());
+          System.out.print("DIRECCION : " + getNombre());
+          System.out.print("CIUDAD : " + getCiudad());
+          System.out.print("PROVINCIA : " + getProvincia());
     }
     
     /**
