@@ -1,18 +1,19 @@
 /**
  *  
  * Modela un producto. Todo producto tiene un nombre y un  precio unidad 
+ * Gorka Rodriguez
  */
 public class Producto
 {
     private String nombre;
-    private double precio;  // precio unidad del producto
+    private double precioUni;  
 
     /**
      * Constructor  
      */
     public Producto(String nombre, double precio)    {
         this.nombre = nombre;
-        this.precio = precio;
+        this.precioUni = precio;
     }
 
     /**
@@ -26,15 +27,15 @@ public class Producto
      * accesor para el precio unidad del producto
      */
     public double getPrecio() {
-        return precio;
+        return precioUni;
     }
 
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public   void      obtenerCopia() {
-        new Producto(this.nombre, this.precio);
-
+    public Producto obtenerCopia() {
+        Producto copia = new Producto(nombre,precioUni);
+        return copia;
     }
 
     /**
@@ -42,7 +43,8 @@ public class Producto
      * (ver enunciado)
      */
     public String toString() {
-
+        String lineaFormateada = String.format("%30s |  %8.2f € unidad", nombre, precioUni);
+        return lineaFormateada;
     }
 
 }

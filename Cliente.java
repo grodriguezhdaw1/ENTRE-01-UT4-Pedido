@@ -1,7 +1,7 @@
 
-
 /**
  *  Representa a un cliente que hace un pedido 
+ *  Gorka Rodriguez
  */
 public class Cliente
 {
@@ -35,34 +35,33 @@ public class Cliente
     }
 
     /**
-     * accesor para la ciudad
+     * Accesor para la ciudad
      */
     public String getCiudad() {
         return ciudad;
     }
 
     /**
-     * accesor para la provincia
+     * Accesor para la provincia
      */
     public String getProvincia() {
         return provincia;
     }
 
     /**
-     * representación textual del cliente
+     * Representación textual del cliente
      */
     public String toString() {
-         return 
-          System.out.print("NOMBRE: " + getNombre());
-          System.out.print("DIRECCION : " + getNombre());
-          System.out.print("CIUDAD : " + getCiudad());
-          System.out.print("PROVINCIA : " + getProvincia());
+        String lineaFormateada = String.format(
+                "%10s: %-10s \n%10s: %-10s \n%10s: %-10s \n%10s: %-10s","NOMBRE",this.getNombre(),"DIRECCION",this.getDireccion(),"CIUDAD", this.getCiudad(),"PROVINCIA", this.getProvincia());
+        return lineaFormateada;
     }
-    
+
     /**
      * 
      */
     public void print() {
+        System.out.println();
         System.out.println(this.toString());
     }
 
